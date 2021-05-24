@@ -4,6 +4,9 @@ FROM ubuntu:20.10
 USER root
 
 RUN apt-get update -y
+
+
+
 RUN apt-get -y upgrade
 RUN apt-get install -y tzdata
 RUN apt-get -f -y install asterisk 
